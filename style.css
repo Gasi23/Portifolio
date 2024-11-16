@@ -1,0 +1,310 @@
+/* Cabeçalho */
+#header {
+    background-color: #1a1a1a; /* Escuro, para um visual moderno */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header .logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff7f50; /* Laranja suave para destaque */
+    letter-spacing: 1px;
+}
+
+#header .logo span {
+    color: white;
+}
+
+#header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li {
+    margin-left: 30px;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+#header nav ul li a:hover {
+    color: #ff7f50; /* Laranja suave ao passar o mouse */
+}
+
+/* Responsividade - Menu em telas pequenas */
+@media (max-width: 768px) {
+    #header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1a1a1a;
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    #header nav ul li {
+        margin: 10px 0;
+    }
+
+    #header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        transition: all 0.3s ease;
+    }
+
+    #header nav ul.active {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -10px;
+    }
+}
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo suave e neutra */
+    color: #333;
+}
+
+/* Seção Hero */
+#hero {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #ff7f50; /* Tom de laranja suave */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px; /* Botão arredondado */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff6f40; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+.cta-btn:active {
+    background-color: #ff5a30; /* Cor ao clicar */
+    transform: translateY(1px);
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#sobre .profile-image {
+    margin-bottom: 40px;
+}
+
+#sobre img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff7f50; /* Borda ao redor da imagem */
+}
+
+#sobre h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+#sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Seção Projetos */
+#projetos {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+}
+
+#projetos .container {
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #003366;
+}
+
+#projetos .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+#projetos .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projetos .card:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#projetos p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #003366;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contato .cta-btn {
+    background-color: #ff7f50;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+#contato .cta-btn:hover {
+    background-color: #ff6f40;
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+/* Formulário de Contato */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+#contact-form button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #ff6f40;
+    transform: translateY(-3px);
+}

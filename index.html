@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">Meu<span>Portfólio</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Inovação e Criatividade</h1>
+                <p>Transformo ideias em experiências visuais inesquecíveis. Vamos construir algo incrível juntos.</p>
+                <a href="#projetos" class="cta-btn">Explorar Projetos</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="img/imagem-perfil.jpeg" alt="Minha Foto de Perfil">
+                </div>
+                <h2>Sobre Mim</h2>
+                <p>Sou uma desenvolvedora apaixonada por criar experiências digitais incríveis...</p>
+            </div>
+        </section>        
+        <section id="projetos" class="content-section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>RehidraTex</h3>
+                        <img src="img/rehidratex.jpeg" alt="RehidraTex" class="project-img">
+                        <p>Unindo enzimas, Ozônio, Reciclagem de Água e Software em um Processo Inovador para Lavanderias de Jeans.</p>
+                    </div>
+                    <div class="card">
+                        <h3>SustentAção</h3>
+                        <img src="img/sustentacao.jpeg" alt="SustentAção" class="project-img">
+                        <p>Desenvolvimento do aplicativo "ID Caruaruense".</p>
+                    </div>
+                    <!-- Novo projeto integrador -->
+                    <div class="card">
+                        <h3>Projeto Integrador</h3>
+                        <img src="img/projeto.jpeg" alt="Projeto Integrador" class="project-img">
+                        <p>Desenvolvimento de um sistema inovador voltado para a integração de tecnologias emergentes, como exoesqueletos e inteligência artificial, para promover a reabilitação de pessoas com mobilidade reduzida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Quer colaborar em algo incrível? Estou à disposição.</p>
+                <a href="mailto:gabrielyv960@gmail.com" class="cta-btn">Entre em Contato</a>
+            </div>
+        </section>
+
+        <form id="contact-form" action="https://formspree.io/f/{SEU_ID}" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="cta-btn">Enviar</button>
+        </form>        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gabriely. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
